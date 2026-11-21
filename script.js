@@ -1,3 +1,10 @@
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", function () {
+  sidebar.classList.toggle("open");
+});
+
 const todayDate = document.getElementById("todayDate");
 const now = new Date();
 todayDate.textContent = now.toDateString();
